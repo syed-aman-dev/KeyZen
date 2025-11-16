@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KeyZen – Cyberpunk Typing Trainer</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="brand">KEYZEN <span class="glow">V2</span></div>
+
+    <div class="nav">
+      <button class="btn" onclick="loadMode('practice')">Practice</button>
+      <button class="btn" onclick="loadMode('levels')">Levels</button>
+      <button class="btn" onclick="loadMode('code')">Code</button>
+      <button class="btn" onclick="openAchievements()">Achievements</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div id="displayText" class="text-box"></div>
+    <input id="typingInput" class="typing-input" autocomplete="off" autofocus />
+
+    <div class="stats">
+      <div>WPM: <span id="wpm">0</span></div>
+      <div>ACC: <span id="accuracy">100%</span></div>
+      <div>Errors: <span id="errors">0</span></div>
+    </div>
+
+    <button class="start-btn" onclick="startTest()">Start</button>
+  </div>
+
+  <!-- JS -->
+  <script src="js/levels.js"></script>
+  <script src="js/achievements.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
